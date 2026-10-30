@@ -54,6 +54,9 @@ Closes https://github.com/JabRef/jabref/issues/11305
 
 _____
 
+DeepWiki was used to understand the codebase and identify the locations for calling the clean up.
+Codex (GPT-6.1 Sol) was used to assist with creating and extending test cases.
+
    <!--
    DISCLOSE every AI tool used to produce this PR, including the exact model.
    Example: "Claude Code (model claude-opus-4-7)", "GitHub Copilot (GPT-4o)".
@@ -87,8 +90,8 @@ _____
 
 - [x] I own the copyright of the code submitted and I license it under the [MIT license](https://github.com/JabRef/jabref/blob/main/LICENSE)
 - [.] If AI tools were used, I disclosed them in the "AI usage" section and reviewed, understood, and take full ownership of all AI-generated code
-- [.] I manually tested my changes in running JabRef (always required)
-- [.] I added JUnit tests for changes (if applicable)
-- [.] I added screenshots in the PR description (if change is visible to the user)
+- [x] I manually tested my changes in running JabRef (always required)
+- [x] I added JUnit tests for changes (if applicable)
+- [x] I added screenshots in the PR description (if change is visible to the user)
 - [.] I added **one sentence (max 20 words)** to `CHANGELOG.md` describing the change from the user's point of view (if the change is visible to the user)
 - [.] I checked the [user documentation](https://docs.jabref.org/) for up to dateness and submitted a pull request to our [user documentation repository](https://github.com/JabRef/user-documentation/tree/main/en)
