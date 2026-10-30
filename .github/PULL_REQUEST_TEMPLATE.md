@@ -56,6 +56,7 @@ _____
 
 DeepWiki was used to understand the codebase and identify the locations for calling the clean up.
 Codex (GPT-6.1 Sol) was used to assist with creating and extending test cases.
+CoPilot was used to assist with understanding the codebase, recommend related changes, and assist in creating unit testing for the factory method.
 
    <!--
    DISCLOSE every AI tool used to produce this PR, including the exact model.
