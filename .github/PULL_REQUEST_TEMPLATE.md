@@ -31,26 +31,24 @@ Unreviewed, misleading, or misrepresented AI-generated submissions may be closed
         Briefly outline next steps and when you plan to implement them.
    -->
 
+Added user preferences to the Journal abbreviations tab that allows the user to choose whether they want the journal (un)abbreviation clean up to be automatically run on fetched entries, and whether it should be unabbreviation, or abbreviation with a particular type. When the preference is set, the corresponding clean up is called upon fetched entries.
+
+Changes were made in various GUI locations where a newly fetched entry is processed, because different types of fetchers have different processing pipelines. No single location could be identified that would affect all fetched entries and also avoid affecting entries added via other means.
+
 ### Steps to test
 
-   <!--
-   1. Describe how reviewers can test this fix/feature.
-      Ideally, think of how you would guide a beginner user of JabRef to try out your change.
-   2. Write numbered steps, with a screenshot (cropped to the relevant area) of what the reviewer should see after the decisive step.
-      No videos: a numbered list lets a reviewer say "at step 3 I could not click X", a video does not.
-      A video is only acceptable when the interaction involves another program (drag and drop from a file manager, push to a LaTeX editor, ...).
-   -->
+1. Open File > Preferences > Journal abbreviations, tick Convert journal titles in fetched entries and press save.
+![img_2.png](img_2.png)
+2. In a library, press Add entry using..., type in the DOI `10.1103/PhysRevLett.116.061102`, and press Search.
+![img_3.png](img_3.png)
+3. The entry is added with the journal title abbreviated to the abbreviation defined in the Jabref built in list.
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
+4. Similarly, automatic abbreviation to the other styles or automatic unabbreviation can be done.
 
 ### Related issues and pull requests
 
-Closes _____
-
-   <!--
-   LINK the issue with the PR by using the "Closes" keyword.
-   Examples:
-     Closes https://github.com/JabRef/jabref/issues/13109
-     Closes #13109
-   -->
+Closes https://github.com/JabRef/jabref/issues/11305
 
 ### AI usage
 
