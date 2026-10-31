@@ -84,11 +84,11 @@ public class AbbreviationPreferences {
         this.journalAbbreviationMode.set(mode);
     }
 
-    public ObjectProperty<JournalMode> getJournalAbbreviationMode() {
+    public ObjectProperty<JournalMode> journalAbbreviationModeProperty() {
         return journalAbbreviationMode;
     }
 
-    public ObjectProperty<AbbreviationType> getAbbreviationTypeOnFetch() {
+    public ObjectProperty<AbbreviationType> abbreviationTypeOnFetchProperty() {
         return abbreviationTypeOnFetch;
     }
 
