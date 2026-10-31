@@ -1241,8 +1241,8 @@ public class JabRefCliPreferences implements CliPreferences {
                 JabRefCliPreferences::convertListToString, JabRefCliPreferences::convertStringToList);
         bindBoolean(abbreviationPreferences.useFJournalFieldProperty(), USE_AMS_FJOURNAL, defaultValues.useFJournalFieldProperty().get());
         bindBoolean(abbreviationPreferences.shouldEnableMscKeywordDescriptionsProperty(), ENABLE_MSC_KEYWORD_DESCRIPTIONS, defaultValues.shouldEnableMscKeywordDescriptions());
-        bindObject(abbreviationPreferences.getJournalAbbreviationMode(), JOURNAL_ABBREVIATION_MODE, defaultValues.useJournalAbbreviationMode(), JournalMode::name, JournalMode::safeValueOf);
-        bindObject(abbreviationPreferences.getAbbreviationTypeOnFetch(), ABBREVIATION_TYPE_ON_FETCH, defaultValues.useAbbreviationTypeOnFetch(), AbbreviationType::name, AbbreviationType::safeValueOf);
+        bindObject(abbreviationPreferences.journalAbbreviationModeProperty(), JOURNAL_ABBREVIATION_MODE, defaultValues.useJournalAbbreviationMode(), JournalMode::name, JournalMode::safeValueOf);
+        bindObject(abbreviationPreferences.abbreviationTypeOnFetchProperty(), ABBREVIATION_TYPE_ON_FETCH, defaultValues.useAbbreviationTypeOnFetch(), AbbreviationType::name, AbbreviationType::safeValueOf);
         return abbreviationPreferences;
     }
     // endregion
