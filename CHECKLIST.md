@@ -56,10 +56,10 @@ Read your own diff once, top to bottom, and confirm each point.
 Run in this order — cheapest first. Each must pass.
 
 - [ ] `./gradlew :jablib:check` (or `./gradlew check` for all modules).
-- [ ] `./gradlew checkstyleMain checkstyleTest checkstyleJmh`.
-- [ ] `./gradlew modernizer`.
+- [x] `./gradlew checkstyleMain checkstyleTest checkstyleJmh`.
+- [x] `./gradlew modernizer`.
 - [ ] `./gradlew --no-configuration-cache :rewriteDryRun` reports no changes (run `./gradlew rewriteRun` to fix).
-- [ ] `./gradlew javadoc`.
+- [x] `./gradlew javadoc`.
 - [ ] `npx markdownlint-cli2 "docs/**/*.md" "*.md"` (only if Markdown changed).
 - [ ] `npm ci && npm run textlint` reports no misspellings (only if Markdown changed).
 - [ ] Only if formatting is still off after `rewriteRun`: `docker run -v $(pwd):/github/workspace ghcr.io/leventebajczi/intellij-format:master "*.java" "" ".idea/codeStyles/Project.xml"`.
