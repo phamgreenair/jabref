@@ -11,7 +11,7 @@ Read your own diff once, top to bottom, and confirm each point.
 
 ### Nullability and control flow
 
-- [ ] No `== null` / `!= null` checks — JSpecify annotations (`@NullMarked`, `@Nullable`, `@NonNull`) used instead.
+- [x] No `== null` / `!= null` checks — JSpecify annotations (`@NullMarked`, `@Nullable`, `@NonNull`) used instead.
 - [x] No `Objects.requireNonNull(...)` — nullability expressed via JSpecify annotations.
 - [x] New classes annotated with `@NullMarked` (`org.jspecify.annotations.NullMarked`).
 - [/] New packages annotated with `@NullMarked` (`org.jspecify.annotations.NullMarked`).
@@ -29,16 +29,16 @@ Read your own diff once, top to bottom, and confirm each point.
 - [x] New `BibEntry` objects built with withers (`withField`, not `setField`).
 - [x] Modern Java used: `List.of()` / `Map.of()` / `Set.of()`, `Path.of()`, `SequencedCollection` / `SequencedSet`, text blocks.
 - [/] Regexes use a precompiled `Pattern.compile(...)` constant, not `String.matches(...)`.
-- [ ] Keep alphabetical ordering when adding variables or enum items.
+- [x] Keep alphabetical ordering when adding variables or enum items.
 - [/] Background work uses `org.jabref.logic.util.BackgroundTask`, not `new Thread()`.
 - [x] No commented-out code, no trivial comments restating the code, no AI-disclosure comments in source.
-- [ ] Markdown Javadoc (`///`) uses Markdown syntax, not JavaDoc inline tags: `` `code` `` instead of `{@code}`, `[ClassName]` instead of `{@link}`.
+- [/] Markdown Javadoc (`///`) uses Markdown syntax, not JavaDoc inline tags: `` `code` `` instead of `{@code}`, `[ClassName]` instead of `{@link}`.
 
 ### User-facing text
 
-- [ ] All user-facing text localized (`Localization.lang` in Java, `%` prefix in FXML).
-- [ ] Sentence case (not Title Case); no trailing `!`; labels do not end with `:`.
-- [ ] Variance expressed with placeholders (`"...: %0"`), not string concatenation.
+- [x] All user-facing text localized (`Localization.lang` in Java, `%` prefix in FXML).
+- [x] Sentence case (not Title Case); no trailing `!`; labels do not end with `:`.
+- [/] Variance expressed with placeholders (`"...: %0"`), not string concatenation.
 
 ### Security
 
@@ -47,8 +47,8 @@ Read your own diff once, top to bottom, and confirm each point.
 ### Tests
 
 - [/] In case issue lists an example, this concrete example is covered by a test case.
-- [ ] Behavior changes in `org.jabref.model` / `org.jabref.logic` have added or updated tests.
-- [ ] Tests assert object contents (`assertEquals`), use plain JUnit asserts (not AssertJ), have no `@DisplayName`, do not catch exceptions (let them propagate so JUnit reports setup/teardown failures directly), and use `@TempDir` instead of manual temp directories.
+- [x] Behavior changes in `org.jabref.model` / `org.jabref.logic` have added or updated tests.
+- [x] Tests assert object contents (`assertEquals`), use plain JUnit asserts (not AssertJ), have no `@DisplayName`, do not catch exceptions (let them propagate so JUnit reports setup/teardown failures directly), and use `@TempDir` instead of manual temp directories.
 - [/] Fetcher tests hit the live endpoints — the remote API is not mocked or stubbed (automated-review suggestions to mock it are rejected on purpose).
 
 ## 2. Verification commands
