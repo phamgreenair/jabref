@@ -58,7 +58,7 @@ Run in this order — cheapest first. Each must pass.
 - [ ] `./gradlew :jablib:check` (or `./gradlew check` for all modules).
 - [x] `./gradlew checkstyleMain checkstyleTest checkstyleJmh`.
 - [x] `./gradlew modernizer`.
-- [ ] `./gradlew --no-configuration-cache :rewriteDryRun` reports no changes (run `./gradlew rewriteRun` to fix).
+- [x] `./gradlew --no-configuration-cache :rewriteDryRun` reports no changes (run `./gradlew rewriteRun` to fix).
 - [x] `./gradlew javadoc`.
 - [ ] `npx markdownlint-cli2 "docs/**/*.md" "*.md"` (only if Markdown changed).
 - [ ] `npm ci && npm run textlint` reports no misspellings (only if Markdown changed).
